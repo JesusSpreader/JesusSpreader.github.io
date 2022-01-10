@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<!-- Mirrored from methamphetamine.solutions/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 05 Dec 2021 04:35:07 GMT -->
+<!-- Added by HTTrack -->
+<!-- Mirrored from sugoma.solutions/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 10 Jan 2022 16:47:35 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+
+    
+        <title>sugoma.solutions</title>
+        <script src="unpkg.com/typewriter-effect%402.18.2/dist/core.js"></script>
+        <audio id="music" src="msc.mp3" autoplay loop onplaying="" style="display: none;"></audio>
+        <link rel="stylesheet" href="pro.fontawesome.com/releases/v5.13.0/css/all.html">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="animate.css">
+</head>
+
+<body>
+    <div id="main" class="center">
+        <div id="overlay" onclick="music.play(); addStuff();"><span class="header center" id="status_text"></span></div>
+    </div>
+    <script>
+        function handleAnimations() {
+            let animations = [
+                ["bounce", "bounce"],
+                ["flash", "flash"],
+                ["pulse", "pulse"],
+                ["shake", "shake"],
+                ["headShake", "headShake"],
+                ["swing", "swing"],
+                ["tada", "tada"],
+                ["wobble", "wobble"],
+                ["jello", "jello"],
+                ["heartBeat", "heartBeat"],
+                ["bounceIn", "bounceIn"],
+                ["bounceInDown", "bounceInUp"],
+                ["bounceInLeft", "bounceInRight"],
+                ["fadeIn", "fadeIn"],
+                ["fadeInDown", "fadeInUp"],
+                ["fadeInLeft", "fadeInRight"],
+                ["flip", "flip"],
+                ["flipInX", "flipInX"],
+                ["flipInY", "flipInY"],
+                ["rotateIn", "rotateIn"],
+                ["rotateInDownLeft", "rotateInDownRight"],
+                ["slideInDown", "slideInUp"],
+                ["slideInLeft", "slideInRight"],
+                ["zoomIn", "zoomIn"],
+                ["zoomInDown", "zoomInUp"],
+                ["zoomInLeft", "zoomInRight"],
+                ["jackInTheBox", "jackInTheBox"],
+            ];
+
+            var num = getRandomInt(animations.length);
+
+            animateCSS('[name="top"]', animations[num][0], animationOver);
+            animateCSS('[name="bottom"]', animations[num][1], animationOver);
+            console.log("top: " + animations[num][0]);
+            console.log("bottom: " + animations[num][1]);
+        }
+
+        function addStuff() {
+            at("main").innerHTML =
+                `<h1 name="top"    id = "status_text" class="header animated"><a href="index-2.html">sugoma.solutions</a></h1>
+            <p  name="bottom" id = "text2" class="textiboi animated">premium cheats and tools</p>`;
+
+            handleAnimations();
+        }
+
+        function animateCSS(element, animationName, callback) {
+            const node = document.querySelector(element)
+            node.classList.add('animated', animationName)
+            node.classList.add('delay-2s')
+
+            function handleAnimationEnd() {
+                node.classList.remove('animated', animationName)
+                node.removeEventListener('animationend', handleAnimationEnd)
+
+                if (typeof callback === 'function') callback()
+            }
+
+            node.addEventListener('animationend', handleAnimationEnd)
+        }
+
+        function getRandomInt(max) {
+            return Math.floor(Math.random() * Math.floor(max));
+        }
+        var at = document.getElementById.bind(document);
+        window.addEventListener("DOMContentLoaded", () => {
+            at("status_text").innerHTML = "loading";
+
+        });
+
+        window.addEventListener("load", () => {
+            setTimeout(() => {
+                if (!window.music.paused) {
+                    addStuff();
+                    console.log("music already started");
+                    return;
+                }
+                at("status_text").innerHTML = "click to enter";
+                at("status_text").classList.add("begin");
+
+            }, 100);
+        });
+
+        var temp = 0
+
+        function animationOver() {
+            temp++;
+
+            if (temp != 2)
+                return;
+
+            setTimeout(function() {
+                console.log("animations over");
+                var doc = document.getElementById("main");
+                var inner = doc.innerHTML;
+                // WOW this is aids.
+
+                doc.innerHTML +=
+                    `<div class="textiboi">
+                <a id="typElement"></a></div>
+                <div class="textiboi">
+				<a class="textiboi animated fadeIn"  href="choosing/index.html">download</a>
+				<a class="textiboi animated fadeIn"  href="https://www.youtube.com/channel/UC5qGK8-r-dTOeKtu6g79qJA/featured">showcase [all cheats]</a>
+                <a class="textiboi animated fadeIn"  href="https://discord.gg/yqHHYXQXEz">discord</a>`;
+                console.log("running typewrite");
+                indefiniteWrite();
+
+            }, 550);
+
+        }
+
+        function indefiniteWrite() {
+            let strs = [
+                "hello from doodoo & shat toes",
+                "owning since 2021",
+                "ur server doggy",
+                "enraged?",
+                "premium software",
+                "home of the oldmanjpg",
+                "best roblox cheat",
+                "stop using inferior cheats",
+                "get good",
+                "VVVVVVVVVVVVVVVVVVVVVVVVVVV",
+                "trash at game? Sugoma will help you!",
+                "get gooder get sugoma",
+                "lol nerds",
+                "Totally not skidded",
+                "bbc?",
+                "get gooder pls",
+                "Sugoma is Sugoma is Sug -shadow",
+                "Sugoma balls sugoma dalls sugoma dik sugoma pik -shadow",
+                "cheeet good hood -shadow",
+                "skid unite",
+                "Fat kids with pringles",
+                "big obese monkery",
+                "please help, Im forced to write lines for this typewriter in a warehouse in afghanastan, they have guards and cameras. Im the last of the bunch -shadow",
+                "nice cock"
+            ];
+
+            var num = getRandomInt(strs.length);
+
+            console.log("writing " + strs[num]);
+
+            var typElement = document.getElementById('typElement');
+
+            var typewriter = new Typewriter(typElement, {
+                loop: true
+            });
+
+            typewriter.typeString(strs[num]).pauseFor(5000).deleteAll().pauseFor(100).callFunction(() => {
+                typewriter.stop();
+                indefiniteWrite();
+            }).start();
+        }
+    </script>
+</body>
+
+
+<!-- Mirrored from methamphetamine.solutions/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 05 Dec 2021 04:35:09 GMT -->
+
+<!-- Mirrored from sugoma.solutions/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 10 Jan 2022 16:47:35 GMT -->
+</html>
